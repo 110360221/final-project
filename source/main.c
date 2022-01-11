@@ -31,7 +31,7 @@ void showall(user a)	  //顯示所有牌
 	else if (a.name == 'p')
 	{
 
-		printf("玩家所有的牌   : ");
+		printf("玩家所有的牌 : ");
 		for (i = 0; i < 5; i++)
 			printf("%c ", num[player.time[i] - 1]);
 		printf("玩家的總和 : %d \n", player.total);
@@ -114,7 +114,7 @@ int main()
 
 	printf("(T = 10)\n");
 	printf("莊家的牌 : *  %c\n\n", num[banker.time[1] - 1]);				//不知道莊家的第一張牌
-	printf("玩家的牌   : %c %c\n\n", num[player.time[0] - 1], num[player.time[1] - 1]);
+	printf("玩家的牌 : %c %c\n\n", num[player.time[0] - 1], num[player.time[1] - 1]);
 
 	printf("是否要牌?  n)否  y)是  ");
 	scanf(" %c", &ans);
@@ -168,7 +168,7 @@ int main()
 	if (banker.total < 18)
 	{
 		i = 2;
-		while (banker.total < 17)
+		while (banker.total < 16)
 		{
 			banker.time[i] = rand() % 13 + 1;
 			if (banker.time[i] > 10)
