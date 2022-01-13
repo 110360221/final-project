@@ -14,5 +14,8 @@
     <ClCompile Include="..\..\source\main.c">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\again.c">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
